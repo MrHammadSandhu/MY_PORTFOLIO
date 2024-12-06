@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <main className="flex items-center  w-full min-h-screen">
-        <Layout className="pt-0 md:pt-16 sm:pt-8">
+        <Layout className="pt-0 md:pt-16 sm:pt-5">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
               <Image
@@ -63,7 +63,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <HireMe />
+          {/* <HireMe /> */}
         </Layout>
       </main>
     </>

@@ -52,7 +52,7 @@ const TypeWriter = ({ phrases, className = "" }) => {
 
   return (
     <motion.div
-      className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden"
+      className="w-full mx-auto  flex items-center justify-center text-center overflow-hidden"
       variants={containerVariants}
       initial="initial"
       animate="animate"
