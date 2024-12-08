@@ -1,11 +1,11 @@
 "use client";
-import Layout from "@/Components/Layout";
 import { motion, useMotionValue } from "motion/react";
 import Link from "next/link";
 import React, { useRef } from "react";
 import Image from "next/image";
 import TransitionEffect from "@/components/TransitionEffect";
 import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
 
 const FramerImage = motion(Image);
 
