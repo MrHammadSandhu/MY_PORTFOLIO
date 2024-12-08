@@ -1,9 +1,9 @@
 import React from "react";
-import AnimatedText from "@/Components/AnimatedText";
-import { GithubIcon } from "@/Components/Icons";
 import Layout from "@/Components/Layout";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
+import { GithubIcon } from "@/components/Icons";
+import AnimatedText from "@/components/AnimatedText";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
