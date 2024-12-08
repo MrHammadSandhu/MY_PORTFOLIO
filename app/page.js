@@ -7,10 +7,12 @@ import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../public/developer-pic-1.png";
 import Buttons from "@/components/Buttons";
+import TransitionEffect from "@/components/TransitionEffect";
 
 export default function Home() {
   return (
     <>
+      <TransitionEffect />
       <main className="flex items-center  w-full min-h-screen">
         <Layout className="pt-0 md:pt-16 sm:pt-5">
           <div className="flex items-center justify-between w-full lg:flex-col">
@@ -41,12 +43,13 @@ export default function Home() {
                 ]}
                 className="text-6xl text-left xl:text-5xl lg:text-5xl 2xl:text-[58px] lg:text-center md:text-4xl  sm:text-3xl"
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-white">
-                As a skilled full-stack developer, I am dedicated to turning
+              <AnimatedText
+                text="As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
-                web development.
-              </p>
+                web development."
+                className="my-4 text-base font-medium md:text-sm sm:text-xs text-white text-start"
+              />
               <Buttons />
             </div>
           </div>

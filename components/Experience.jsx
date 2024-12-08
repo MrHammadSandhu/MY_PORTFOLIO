@@ -4,7 +4,7 @@ import { useScroll, motion } from "motion/react";
 import LiIcons from "./LiIcons";
 
 const Details = ({ poition, company, companyLink, time, address, work }) => {
-  const ref = useRef();
+  const ref = useRef(null);
   return (
     <li
       ref={ref}
@@ -16,17 +16,17 @@ const Details = ({ poition, company, companyLink, time, address, work }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-lg">
+        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-lg mb-4">
           {poition}&nbsp;
           <a
             href={companyLink}
             target="_blank"
-            className="text-primary dark:text-primaryDark capitalize"
+            className="text-primaryDark capitalize"
           >
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+        <span className="capitalize font-medium text-light/40  xs:text-sm">
           {time} | {address}
         </span>
         <p className="font-medium w-full md:text-sm">{work}</p>
@@ -49,39 +49,9 @@ const Experience = () => {
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
+          className="absolute left-9 top-1 w-[4px] h-full  origin-top bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-          <Details
-            poition="Full stack developer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Prsent"
-            address="Lahore, Pakistan"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
-          />
-          <Details
-            poition="Full stack developer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Prsent"
-            address="Lahore, Pakistan"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
-          />
-          <Details
-            poition="Full stack developer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Prsent"
-            address="Lahore, Pakistan"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
-          />
           <Details
             poition="Full stack developer"
             company="Google"

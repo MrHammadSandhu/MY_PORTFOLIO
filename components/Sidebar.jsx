@@ -4,11 +4,11 @@ import { useRouter } from "next/navigation";
 import { About, Contact, Home, Project, Services } from "./Icons";
 
 export const navData = [
-  { name: "home", path: "/", icon: <Home /> },
-  { name: "about", path: "/about", icon: <About /> },
-  { name: "services", path: "/services", icon: <Services /> },
-  { name: "work", path: "/work", icon: <Project /> },
-  { name: "contact", path: "/contact", icon: <Contact /> },
+  { name: "Home", path: "/", icon: <Home /> },
+  { name: "About", path: "/about", icon: <About /> },
+  { name: "Projects", path: "/projects", icon: <Project /> },
+  { name: "Articles", path: "/articles", icon: <Services /> },
+  { name: "Contact", path: "/contact", icon: <Contact /> },
 ];
 
 const Nav = () => {

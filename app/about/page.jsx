@@ -6,6 +6,7 @@ import Experience from "@/components/Experience";
 import HireMe from "@/components/HireMe";
 import Layout from "@/components/Layout";
 import Skills from "@/components/Skills";
+import TransitionEffect from "@/components/TransitionEffect";
 import { useInView, useMotionValue, useSpring } from "motion/react";
 import React, { useEffect, useRef } from "react";
 
@@ -34,6 +35,7 @@ const AnimatedNumbers = ({ value }) => {
 const page = () => {
   return (
     <>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
@@ -104,7 +106,7 @@ const page = () => {
             </div>
             <div className="flex flex-col items-center justify-center md:items-center">
               <span className="inline-block text-6xl font-bold md:text-5xl lg:text-5xl sm:text-3xl xs:text-3xl">
-                <AnimatedNumbers value={4} />+
+                <AnimatedNumbers value={1} />+
               </span>
               <h2 className="text-xl font-medium capitalize text-light/40 xl:text-center md:text-lg sm:text-base xs:text-sm">
                 Year of Experience
@@ -112,9 +114,9 @@ const page = () => {
             </div>
           </div>
           <Skills />
-          <Education />
           <Experience />
-          <HireMe className="sm:block md:block lg:hidden xl:hidden 2xl:hidden" />
+          <Education />
+          <HireMe className="sm:block md:block lg:hidden xl:hidden 2xl:hidden hidden" />
         </Layout>
       </main>
     </>

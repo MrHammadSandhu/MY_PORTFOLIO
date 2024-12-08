@@ -16,6 +16,7 @@ module.exports = {
         light: "#f5f5f5",
         primary: "#B63E96", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217
+        secondary: "#c9f31d", // 80,230,217
       },
       animation: {
         "spin-slow": "spin 8s linear infinite",
@@ -31,11 +32,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        circularLight:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px)",
-
         circularDark:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 100px)",
+          "repeating-radial-gradient(rgba(255,255,255,0.5) 3px, rgba(27,27,27,0) 12px, rgba(27,27,27,0) 80px)",
 
         circularLightLg:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",

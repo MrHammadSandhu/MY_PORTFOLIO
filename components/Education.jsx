@@ -16,10 +16,10 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-lg">
+        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-lg mb-4">
           {type}
         </h3>
-        <span className="capitalize font-medium text-dark/75 xs:text-sm">
+        <span className="capitalize font-medium text-light xs:text-sm">
           {time} | {place}
         </span>
         <p className="font-medium w-full md:text-sm">{info}</p>
@@ -42,17 +42,9 @@ const Education = () => {
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
+          className="absolute left-9 top-1 w-[4px] h-full bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-          <Details
-            type="Full stack developer"
-            time="2022-Prsent"
-            place="Lahore, Pakistan"
-            info="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
-          />
           <Details
             type="Full stack developer"
             time="2022-Prsent"
