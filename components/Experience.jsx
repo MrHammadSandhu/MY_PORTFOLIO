@@ -16,12 +16,12 @@ const Details = ({ poition, company, companyLink, time, address, work }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-lg mb-4">
+        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-lg mb-2">
           {poition}&nbsp;
           <a
             href={companyLink}
             target="_blank"
-            className="text-primaryDark capitalize"
+            className="text-secondary capitalize"
           >
             @{company}
           </a>
@@ -53,20 +53,20 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            poition="Full stack developer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Prsent"
-            address="Lahore, Pakistan"
+            poition="MERN stack developer"
+            company="Heapware"
+            companyLink="https://www.heapware.com/"
+            time="2023-July 2024"
+            address="Arfa Karim Tower, Lahore"
             work="Worked on a team responsible for developing new features for Google's 
             search engine, including improving the accuracy and relevance of search results and 
             developing new tools for data analysis and visualization."
           />
           <Details
             poition="Full stack developer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Prsent"
+            company="Ideoversity"
+            companyLink="https://ideoversity.com/"
+            time="Jan 2024 - June 2024"
             address="Lahore, Pakistan"
             work="Worked on a team responsible for developing new features for Google's 
             search engine, including improving the accuracy and relevance of search results and 

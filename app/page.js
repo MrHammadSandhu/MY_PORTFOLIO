@@ -36,7 +36,7 @@ export default function Home() {
               />
               <TypeWriter
                 phrases={["Full Stack Developer", "MERN Stack Developer"]}
-                className="text-6xl text-left xl:text-5xl lg:text-5xl 2xl:text-[58px] lg:text-center md:text-4xl  sm:text-[26px] mt-6"
+                className="text-6xl text-left xl:text-5xl lg:text-5xl 2xl:text-[58px] lg:text-center md:text-4xl  sm:text-[26px]"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-white text-start">
                 As a skilled full-stack developer, I am dedicated to turning

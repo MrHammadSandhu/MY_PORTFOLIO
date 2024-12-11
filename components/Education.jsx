@@ -16,10 +16,10 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-lg mb-4">
+        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-lg mb-2">
           {type}
         </h3>
-        <span className="capitalize font-medium text-light xs:text-sm">
+        <span className="capitalize font-medium text-light/40 xs:text-sm">
           {time} | {place}
         </span>
         <p className="font-medium w-full md:text-sm">{info}</p>
@@ -46,17 +46,17 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Full stack developer"
-            time="2022-Prsent"
-            place="Lahore, Pakistan"
+            type="Bachelor Of Science In Computer Science"
+            time="2024-Prsent"
+            place="Virtual University, Pakistan"
             info="Worked on a team responsible for developing new features for Google's 
             search engine, including improving the accuracy and relevance of search results and 
             developing new tools for data analysis and visualization."
           />
           <Details
-            type="Full stack developer"
-            time="2022-Prsent"
-            place="Lahore, Pakistan"
+            type="MERN Stack Developement"
+            time="Agu 2023-May 2024"
+            place="Ideoversity Lahore, Pakistan"
             info="Worked on a team responsible for developing new features for Google's 
             search engine, including improving the accuracy and relevance of search results and 
             developing new tools for data analysis and visualization."

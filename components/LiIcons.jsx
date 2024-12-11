@@ -1,11 +1,11 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import { motion, useScroll } from "motion/react";
 
 const LiIcons = ({ reference }) => {
   const { scrollYProgress } = useScroll({
     target: reference,
-    offset: ["start end", "start center"],
+    offset: ["start end", "start start"],
   });
   return (
     <figure className="absolute left-0 stroke-light">
@@ -19,7 +19,7 @@ const LiIcons = ({ reference }) => {
           cx="75"
           cy="50"
           r="20"
-          className="stroke-light stroke-1 fill-none"
+          className="stroke-secondary stroke-1 fill-none"
         />
         <motion.circle
           style={{ pathLength: scrollYProgress }}
@@ -28,7 +28,12 @@ const LiIcons = ({ reference }) => {
           r="20"
           className="stroke-[5px]"
         />
-        <circle cx="75" cy="50" r="10" className="stroke-1 fill-light" />
+        <circle
+          cx="75"
+          cy="50"
+          r="10"
+          className="stroke-1 stroke-secondary fill-secondary"
+        />
       </svg>
     </figure>
   );
