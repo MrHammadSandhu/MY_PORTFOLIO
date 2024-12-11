@@ -32,25 +32,19 @@ export default function Home() {
               />
               <AnimatedText
                 text="Muhammad Hammad"
-                className="text-left text-3xl xl:text-2xl md:text-xl sm:text-[16px] lg:text-center"
+                className="text-left text-4xl xl:text-2xl md:text-xl sm:text-[16px] lg:text-center w-1/2"
               />
               <TypeWriter
-                phrases={[
-                  "MERN  Developer",
-                  "React.Js Developer",
-                  "Node.Js Developer",
-                  "Next.Js Developer",
-                ]}
-                className="text-6xl text-left xl:text-5xl lg:text-5xl 2xl:text-[58px] lg:text-center md:text-4xl  sm:text-3xl"
+                phrases={["Full Stack Developer", "MERN Stack Developer"]}
+                className="text-6xl text-left xl:text-5xl lg:text-5xl 2xl:text-[58px] lg:text-center md:text-4xl  sm:text-3xl mt-6"
               />
-              <AnimatedText
-                text="As a skilled full-stack developer, I am dedicated to turning
+              <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-white text-start">
+                As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
-                web development."
-                className="my-4 text-base font-medium md:text-sm sm:text-xs text-white text-start"
-              />
-              <Buttons />
+                web development.
+              </p>
+              <Buttons className="mt-4" />
             </div>
           </div>
           <HireMe />

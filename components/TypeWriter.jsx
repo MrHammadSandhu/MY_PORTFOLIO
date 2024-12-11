@@ -58,13 +58,13 @@ const TypeWriter = ({ phrases, className = "" }) => {
       animate="animate"
     >
       <motion.h1
-        className={`${className} inline-block w-full text-light font-bold capitalize`}
+        className={`${className} inline-block w-full text-secondary font-bold capitalize`}
         variants={textVariants}
       >
         <motion.span
           className="inline-block"
           initial={{ scale: 1, rotate: 0 }}
-          animate={{ scale: [1, 1.2, 1], rotate: [0, 5, -5, 0] }}
+          animate={{ scale: [1, 1.2, 1] }}
           transition={{ repeat: 0, duration: 1.5 }}
         >
           {displayedText}

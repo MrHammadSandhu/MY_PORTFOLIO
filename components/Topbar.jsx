@@ -44,15 +44,6 @@ const Navbar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a
-            href="/"
-            target={"_blank"}
-            whileHover={{ y: -3 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-7 ml-2 sm:w-5 sm:mx-1"
-          >
-            <DribbbleIcon />
-          </motion.a>
         </nav>
       </div>
     </header>

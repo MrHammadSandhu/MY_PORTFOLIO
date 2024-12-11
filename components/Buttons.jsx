@@ -5,20 +5,21 @@ import { LinkArrow } from "./Icons";
 const Buttons = ({ className = "" }) => {
   return (
     <div
-      className={`flex items-center self-start mt-2 lg:self-center ${className}`}
+      className={`flex items-center self-start mt-2 lg:self-center flex-wrap ${className}`}
     >
       <Link
-        href="#"
-        className="flex items-center bg-light text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-dark hover:text-light border-2 border-solid border-transparent hover:border-light   md:p-2 md:px-4 md:text-base"
+        href="/projects"
+        className="flex items-center justify-between bg-secondary text-light p-2.5 px-4  rounded-lg text-lg font-semibold hover:bg-bgDark hover:text-light border-2 border-solid border-transparent  md:p-2 md:px-4 md:text-base transition-all"
       >
-        Resume
-        <LinkArrow className="w-6 ml-1" />
+        <LinkArrow className="w-[25px] mr-3 h-auto" />
+        View Portfolio
       </Link>
       <Link
-        href="#"
-        className="ml-4 text-lg font-medium text-light underline underline-offset-8  md:text-base"
+        href="/resume"
+        className="flex items-center justify-between bg-bgDark text-light p-2.5 px-4 ml-4 rounded-lg text-lg font-semibold hover:bg-secondary hover:text-light border-2 border-solid border-transparent  md:p-2 md:px-4 md:text-base transition-all"
       >
-        Get in Touch
+        <img src="/resume-icon.png" alt="" className="w-6 mr-2" />
+        View Resume
       </Link>
     </div>
   );
