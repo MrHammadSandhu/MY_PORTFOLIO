@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { About, Contact, Home, Project, Services } from "./Icons";
 
 export const navData = [
@@ -12,31 +12,37 @@ export const navData = [
 ];
 
 const Nav = () => {
-  const router = useRouter();
-  const pathname = router.pathname;
+  const pathname = usePathname(); // Get the current path
+
   return (
-    <nav className="flex flex-col items-center gap-y-4 fixed   right-[2%] z-50 top-1/2 -translate-y-1/2 w-14  md:w-full md:right-0 md:justify-end md:top-auto md:bottom-0 md:translate-y-0">
-      <div className="w-full flex items-center justify-around rounded-full py-12 text-xl gap-y-8 px-0 md:py-5 bg-dark/80  flex-col md:flex-row md:rounded-none">
+    <nav className="flex flex-col items-center gap-y-4 fixed right-[2%] z-50 top-1/2 -translate-y-1/2 w-14 md:w-full md:right-0 md:justify-end md:top-auto md:bottom-0 md:translate-y-0">
+      <div className="w-full flex items-center justify-around rounded-full py-12 text-xl gap-y-8 px-0 md:py-5 bg-bgDark flex-col md:flex-row md:rounded-none">
         {navData.map((link, index) => {
+          const isActive = link.path === pathname; // Check if the current path matches the link's path
+
           return (
             <Link
-              className={`${link.path === pathname && "text-accent"}
-              relative flex items-center group hover:text-accent translation-all duration-300`}
+              className={`${
+                isActive ? "text-secondary" : "text-light"
+              } relative flex items-center group hover:text-accent transition-all duration-300`}
               href={link.path}
               key={index}
             >
               <div className="absolute pr-14 right-0 hidden group-hover:flex">
-                <div className="bg-white relative flex text-dark items-center p-[6px] rounded-[3px]">
+                <div className="bg-secondary relative flex text-light items-center p-[6px] rounded-[3px]">
                   <div className="text-[12px] leading-none font-semibold capitalize">
                     {link.name}
                   </div>
-                  <div
-                    className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2
-                  "
-                  ></div>
+                  <div className="border-solid border-l-secondary border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
                 </div>
               </div>
-              <div>{link.icon}</div>
+              <div
+                className={`${
+                  isActive ? "text-secondary" : ""
+                } transition-all duration-300`}
+              >
+                {link.icon}
+              </div>
             </Link>
           );
         })}

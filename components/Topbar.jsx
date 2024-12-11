@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center">
         <Link
           href=""
-          className="flex items-center justify-center w-20 h-20 text-light text-3xl font-bold italic 
+          className="flex items-center justify-center w-20 h-20 text-secondary text-3xl font-bold 
           md:w-12 md:h-12"
         >
           {/* <img src="/logo.png" alt="" /> */}
@@ -27,7 +27,7 @@ const Navbar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://github.com/MrHammadSandhu"
             target={"_blank"}
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.9 }}
@@ -36,7 +36,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://www.linkedin.com/in/mrhammadsandhu/"
             target={"_blank"}
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.9 }}

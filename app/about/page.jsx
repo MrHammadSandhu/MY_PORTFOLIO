@@ -48,7 +48,7 @@ const page = () => {
                 I build seamless
                 <span className="block relative pl-20 sm:pl-10">
                   web solutions
-                  <span className="absolute w-16 h-1 left-0 bottom-0 top-1/2 -translate-y-1/2 bg-red-800 sm:w-8"></span>
+                  <span className="absolute w-16 h-1 left-0 bottom-0 top-1/2 -translate-y-1/2 bg-secondary sm:w-8"></span>
                 </span>
                 that bring ideas to life
               </h2>
@@ -60,7 +60,7 @@ const page = () => {
             </div>
             <div className="col-span-4 w-full flex flex-col items-start justify-start md:col-span-full">
               <h2 className="mb-4 text-lg font-bold uppercase md:mt-10">
-                Biograhy
+                What I do
               </h2>
               <p className="font-medium">
                 Hi, Im Muhammad Hammad, a web developer and UI/UX designer with
@@ -86,29 +86,29 @@ const page = () => {
               </h3>
             </div>
             <div className="flex flex-col items-center justify-center md:items-center">
-              <span className="inline-block text-6xl font-bold md:text-5xl lg:text-5xl sm:text-3xl xs:text-3xl">
+              <span className="inline-block text-6xl font-bold md:text-5xl lg:text-5xl sm:text-3xl xs:text-3xl text-secondary">
                 <AnimatedNumbers value={50} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-light/40 xl:text-center md:text-lg sm:text-base xs:text-sm">
+              <h2 className="text-xl font-medium capitalize text-bgDark xl:text-center md:text-lg sm:text-base xs:text-sm">
                 Satisfied clients
               </h2>
             </div>
             <div className="flex flex-col items-center justify-center md:items-center">
-              <span className="inline-block text-6xl font-bold md:text-5xl lg:text-5xl sm:text-3xl xs:text-3xl">
+              <span className="inline-block text-6xl font-bold md:text-5xl lg:text-5xl sm:text-3xl xs:text-3xl text-secondary">
                 <AnimatedNumbers value={40} />+
               </span>
               <h2
-                className="text-xl font-medium capitalize text-light/40
+                className="text-xl font-medium capitalize text-bgDark
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
               >
                 Projects Completed
               </h2>
             </div>
             <div className="flex flex-col items-center justify-center md:items-center">
-              <span className="inline-block text-6xl font-bold md:text-5xl lg:text-5xl sm:text-3xl xs:text-3xl">
+              <span className="inline-block text-6xl font-bold md:text-5xl lg:text-5xl sm:text-3xl xs:text-3xl text-secondary">
                 <AnimatedNumbers value={1} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-light/40 xl:text-center md:text-lg sm:text-base xs:text-sm">
+              <h2 className="text-xl font-medium capitalize text-bgDark xl:text-center md:text-lg sm:text-base xs:text-sm">
                 Year of Experience
               </h2>
             </div>
