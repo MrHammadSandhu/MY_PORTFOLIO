@@ -23,17 +23,17 @@ const Nav = () => {
           return (
             <Link
               className={`${
-                isActive ? "text-secondary" : "text-light"
+                isActive ? "text-secondary font-bold text-3xl" : "text-light"
               } relative flex items-center group hover:text-accent transition-all duration-300`}
               href={link.path}
               key={index}
             >
               <div className="absolute pr-14 right-0 hidden group-hover:flex">
-                <div className="bg-secondary relative flex text-light items-center p-[6px] rounded-[3px]">
-                  <div className="text-[12px] leading-none font-semibold capitalize">
+                <div className="bg-secondary relative flex text-light items-center p-[6px] rounded-[3px] md:hidden sm:hidden xs:hidden">
+                  <div className="text-[12px] leading-none font-semibold capitalize ">
                     {link.name}
                   </div>
-                  <div className="border-solid border-l-secondary border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
+                  <div className="border-solid border-l-secondary border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2 "></div>
                 </div>
               </div>
               <div

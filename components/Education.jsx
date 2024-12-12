@@ -49,17 +49,13 @@ const Education = () => {
             type="Bachelor Of Science In Computer Science"
             time="2024-Prsent"
             place="Virtual University, Pakistan"
-            info="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
+            info="I am pursuing a Bachelor of Science in Computer Science (BSCS) at Virtual University of Pakistan, a highly regarded institution known for its flexible and innovative approach to education. This program is equipping me with a strong foundation in computer science concepts and modern technologies, preparing me for a dynamic career in the tech industry."
           />
           <Details
             type="MERN Stack Developement"
             time="Agu 2023-May 2024"
-            place="Ideoversity Lahore, Pakistan"
-            info="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
+            place="Ideoversity, Lahore"
+            info="I completed a comprehensive MERN Stack Development program at Ideoversity, Lahore, where I gained in-depth knowledge and hands-on experience in building modern web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js)."
           />
         </ul>
       </div>

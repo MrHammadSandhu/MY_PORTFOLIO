@@ -54,23 +54,19 @@ const Experience = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             poition="MERN stack developer"
-            company="Heapware"
+            company="Heapware Technologies"
             companyLink="https://www.heapware.com/"
             time="2023-July 2024"
-            address="Arfa Karim Tower, Lahore"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
+            address="Arfa Karim Tower Lahore"
+            work="As a MERN Stack Developer at Heapware Technologies, I have been instrumental in building and maintaining dynamic web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js). My responsibilities revolve around delivering robust and scalable solutions tailored to the unique needs of our clients."
           />
           <Details
             poition="Full stack developer"
             company="Ideoversity"
             companyLink="https://ideoversity.com/"
-            time="Jan 2024 - June 2024"
-            address="Lahore, Pakistan"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
+            time="Jan 2024 - June 2024 (Intern)"
+            address="Lahore"
+            work="As a Full Stack Developer Intern at Ideoversity, I gained hands-on experience in designing, developing, and deploying modern web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js). This internship offered an invaluable opportunity to work in a collaborative environment and contribute to impactful projects."
           />
         </ul>
       </div>

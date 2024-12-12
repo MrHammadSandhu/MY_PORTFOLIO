@@ -63,16 +63,19 @@ const page = () => {
                 What I do
               </h2>
               <p className="font-medium">
-                Hi, Im Muhammad Hammad, a web developer and UI/UX designer with
-                a passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients visions to life.
+                I am Muhammad Hammad, a highly skilled Full Stack Web Developer
+                with 1 year of professional experience, specializing in the MERN
+                stack (MongoDB, Express.js, React.js, and Node.js). My expertise
+                lies in building robust, scalable, and user-friendly web
+                applications tailored to meet diverse business needs.
               </p>
               <p className="my-4 font-medium sm:my-1 md:my-2 lg:my-[1px]">
-                I believe that design is about more than just making things look
-                pretty its about solving problems and creating intuitive,
-                enjoyable experiences for users.
+                I have extensive experience working with modern web
+                technologies, including Bootstrap, Tailwind CSS, and Redux,
+                ensuring visually stunning and highly interactive applications.
+                With a passion for clean and efficient code, I develop websites
+                and applications that are not only functional but also optimized
+                for performance and scalability.
               </p>
               <Buttons className="mt-4 lg:!self-start md:!self-start" />
             </div>

@@ -9,14 +9,14 @@ const Buttons = ({ className = "" }) => {
     >
       <Link
         href="/projects"
-        className="flex items-center justify-between bg-secondary text-light p-2.5 px-4  rounded-lg text-lg font-semibold hover:bg-bgDark hover:text-light border-2 border-solid border-transparent  md:p-2 md:text-base transition-all"
+        className="flex items-center justify-between bg-secondary text-light p-2.5 px-4  rounded-lg text-lg font-semibold hover:bg-bgDark hover:text-light border-2 border-solid border-transparent  md:p-2 md:text-base transition-all xs:px-2"
       >
         <LinkArrow className="!w-4 mr-3" />
         View Portfolio
       </Link>
       <Link
         href="/resume"
-        className="flex items-center justify-between bg-bgDark text-light p-2.5 px-4 ml-4  rounded-lg text-lg font-semibold hover:bg-secondary hover:text-light border-2 border-solid border-transparent  md:p-2 md:text-base transition-all"
+        className="flex items-center justify-between bg-bgDark text-light p-2.5 px-4 ml-4  rounded-lg text-lg font-semibold hover:bg-secondary hover:text-light border-2 border-solid border-transparent  md:p-2 md:text-base transition-all xs:px-1 xs:ml-1 "
       >
         <img src="/resume-icon.png" alt="" className="w-6 mr-2" />
         View Resume

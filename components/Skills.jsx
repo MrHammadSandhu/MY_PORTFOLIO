@@ -54,6 +54,8 @@ const Skills = () => {
         <Skill name="Graph ql" x="31vw" y="-5vw" icon="/graphql.svg" />
         <Skill name="MySql" x="33vw" y="-12vw" icon="/mysql.svg" />
         <Skill name="Redux" x="2vw" y="-19vw" icon="/redux.svg" />
+        <Skill name="Bootstrap" x="20vw" y="15vw" icon="/bootstarp.svg" />
+        <Skill name="Vercel" x="35vw" y="10vw" icon="/vercel.svg" />
       </div>
     </>
   );
