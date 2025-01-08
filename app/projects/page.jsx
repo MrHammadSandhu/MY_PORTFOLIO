@@ -125,7 +125,7 @@ const page = () => {
                 summary="I developed the FunkyFox Car Rental Management website using the MERN stack to streamline the car rental process. The site features a clean design and user-friendly interface, allowing users to easily browse and reserve cars. With dynamic features powered by MongoDB, Express.js, React.js, and Node.js, it provides a seamless and responsive experience for car rental management.
                 Credentials = Email: admin@gmail.com , Password : admin123
                 "
-                link="https://funkyfox.vercel.app/"
+                link="https://funky-fox-frontend.vercel.app/"
                 github="https://github.com/MrHammadSandhu/FUNKYFOX-FRONTEND"
                 type="Featured Project"
                 img="/funkyfox.png"
