@@ -1,3 +1,4 @@
+import Head from "next/head";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Nav from "@/components/Sidebar";
@@ -18,6 +19,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="canonical" href="https://www.gulfhorizontele.com/en" />
+      </Head>
       <body className={`${montserrat.variable} w-full min-h-screen `}>
         <SocialsContainer />
         <Nav />
